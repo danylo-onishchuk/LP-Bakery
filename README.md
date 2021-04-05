@@ -3,4 +3,4 @@
 [DEMO LINK](https://danylo-onishchuk.github.io/layout_creativeBakery/)
 
 Technologies: HTML
-+ CSS + SASS + BEM methodology
++ CSS + SASS + BEM methodology + JS
