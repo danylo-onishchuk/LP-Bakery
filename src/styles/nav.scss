@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: 100%;
+
+  &__list {
+    display: flex;
+    gap: 34px;
+  }
+
+  &__link {
+    @extend %p;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .nav {
+    display: none;
+  }
+}

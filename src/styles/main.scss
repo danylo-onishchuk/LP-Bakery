@@ -1,0 +1,34 @@
+@import "utils";
+@import "typography";
+@import "header";
+@import "nav";
+@import "bakery";
+@import "bakershops";
+@import "about";
+@import "contacts";
+@import "form";
+@import "footer";
+@import "burger";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $rubik;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $gray;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+}
+
+button:hover {
+  transition: background-color 300ms;
+  background-color: $white;
+}

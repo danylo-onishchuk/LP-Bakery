@@ -1,0 +1,119 @@
+.bakershops {
+  width: 100%;
+  background-color: $cream;
+  flex-wrap: wrap;
+
+  &__title {
+    margin-top: 40px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: $max-width - 130px;
+    width: $width;
+    margin: 87px auto;
+  }
+
+  &__select-city {
+    @extend %p;
+    width: 173px;
+    background-color: $cream;
+    cursor: pointer;
+    opacity: 0.5;
+    border-bottom: 1px rgba(65,45,34,0.5) solid;
+  }
+
+  &__select-adress {
+    @extend %p;
+    width: 323px;
+    background-color: $cream;
+    cursor: pointer;
+    opacity: 0.5;
+    border-bottom: 1px rgba(65,45,34,0.5) solid;
+  }
+
+  &__button {
+    @extend %p;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    background: $title-color;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+
+  &__map {
+    display: block;
+    margin: 71px auto 57px;
+    padding: 0 $padding-list;
+    width: 100%;
+    max-width: 1020px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__row-mobile {
+    display: none;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px auto 30px;
+  }
+
+  &__minus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: $white;
+    border-radius: 26px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  &__plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: $white;
+    border-radius: 26px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .bakershops {
+    &__row {
+      margin: 0 auto 25px;
+    }
+
+    &__button {
+      width: 100%;
+      max-width: 148px;
+    }
+
+    &__select-city {
+      width: 288px;
+    }
+
+    &__select-adress {
+      width: 288px;
+    }
+
+    &__map {
+      margin: 0 auto;
+    }
+
+    &__row-mobile {
+      display: flex;
+    }
+  }
+}
