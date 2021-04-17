@@ -47,13 +47,12 @@
     font-family: $rubik;
     font-weight: 400;
     font-size: 16px;
-    line-height: 0.7em;
+    line-height: 1em;
     color: $text-color;
     margin: 70px 0 40px;
     background-color: $gray;
     opacity: 0.5;
     border-bottom: 1px rgba(65,45,34,0.5) solid;
-    resize: none;
   }
 
   &__button {
